@@ -1,0 +1,18 @@
+{
+  "figma_frame": {
+    "width": 1440,
+    "height": 5307
+  },
+  "images": [
+    "3316f0415e0f65b4bbacf294e69b277e904431a0.jpg",
+    "7b6172afa7b326a412ffc1262fe520ae51577d05.jpg",
+    "a3a248ef1ca95030a6b6892ab3ed7fd4440060cc.jpg",
+    "b157fa3bc3410449bd63a774fe3a7dc60dba919a.jpg",
+    "bb0eebe01b19c2b7674396c3949e4653c12fc3b5.jpg",
+    "ec2d53fc03281f102b5888dd5b34e9ce56d24b49.jpg"
+  ],
+  "sizing": {
+    "horizontal": "FIXED",
+    "vertical": "FIXED"
+  }
+}

@@ -1,0 +1,1168 @@
+<!DOCTYPE html><html lang="en" xml:lang="en"><head><meta name="viewport" content="width=device-width">
+<link  rel="preconnect" href="https://cdn.divriots.com" crossorigin>
+<link  rel="preconnect" href="https://fonts.googleapis.com">
+<link  rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iIq129k.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1isq129k.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1pUL8lJdhg.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iAq129k.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1iEq129k.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n1i8q1w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+<style>
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://cdn.divriots.com/fonts/inter/v3.19/Inter.var.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('https://cdn.divriots.com/fonts/inter/v3.19/Inter.var.woff2') format('woff2');
+  font-variation-settings: 'slnt' -10;
+}</style>
+
+<style media="all">
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+}a {
+  color: inherit;
+  text-decoration: inherit;
+}
+input {
+  border: none;
+  font: inherit;
+  outline: none;
+  background-color: inherit;
+}
+button {
+  border-style: none;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  font: inherit;
+  line-height: normal;
+  color: inherit;
+}
+textarea {
+  font: inherit;
+  background-color: inherit;
+}
+select {
+  font: inherit;
+  background-color: inherit;
+}
+img {
+  display: block;
+}
+picture {
+  display: block;
+}
+video {
+  display: block;
+}
+canvas {
+  display: block;
+}
+svg {
+  display: block;
+}
+
+[data-visible='false']{
+  display:none!important;
+}
+
+.before-hidden::before {
+  display:none;
+}
+
+.after-hidden::after {
+  display:none;
+}
+
+.before-visible::before {
+  content: "";
+}
+
+.after-visible::after {
+  content: "";
+}
+
+.text {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  /* Figma advances a tab exactly one space, wherever it sits (measured). CSS
+     can only set tab stops: one every space-width brings a tab within about
+     half a space of Figma, where the default stop every 8 spaces is far off */
+  tab-size: 1;
+}
+</style>
+
+<meta charset="utf-8"></head><body style="display: grid;background-color: #101215;">
+  <div style="border-radius: 0px;background-color: #101215;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;position: relative;margin: 0px auto;">
+    <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 900px;position: relative;flex-shrink: 0;">
+      <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 800px;position: relative;flex-shrink: 0;">
+        <div style="overflow: hidden;border-radius: 0px;left: 0px;top: 0px;width: 1440px;height: 800px;position: absolute;">
+          <img src="../_assets/images/3316f0415e0f65b4bbacf294e69b277e904431a0.jpg" alt="Mercedes editorial" data-abovethefold=1 style="inset: 0;width: 100%;height: 100%;position: absolute;object-fit: cover;">
+        </div>
+        <div style="border-radius: 0px;background-image: linear-gradient(90deg, rgba(11,13,16,0.96) 0%, rgba(11,13,16,0.74) 43%, rgba(11,13,16,0.13) 76%, rgba(11,13,16,0.19) 100%);background-blend-mode: normal;left: 0px;top: 0px;width: 1440px;height: 800px;position: absolute;">
+        </div>
+        <svg width="1440" height="800" viewBox="0 0 1440 800" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 0px;top: 0px;width: 1440px;height: 800px;position: absolute;">
+          <defs>
+            <linearGradient x1=0 y1=0.5 x2=1 y2=0.5 gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 800 1440 0 0.000002926046605011834 -0.0000036679782766668723)" id="def_0">
+              <stop stop-color="rgba(11,13,16,0.25)" offset=0 />
+              <stop stop-color="rgba(11,13,16,0)" offset=0.699999988079071 />
+              <stop stop-color="rgba(11,13,16,0.88)" offset=1 />
+            </linearGradient>
+          </defs>
+          <path d="M0 0L1440 0 1440 800 0 800 0 0Z" style="fill-rule: nonzero;fill: url(#def_0);" />
+        </svg>
+        <div style="border-width: 0px 0px 1px;border-style: solid;border-color: rgba(255,255,255,0.14);border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 96px;position: relative;flex-shrink: 0;padding: 0px 80px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 2px;align-items: center;justify-content: flex-start;width: 126px;height: 39px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+            <span class="text" style="display: inline;text-align: left;font-size: 32px;font-family: Inter, system-ui, sans-serif;font-weight: 800;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">AP</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 32px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Cars</span>
+            <div style="border-radius: 1px;background-color: #2864ff;width: 6px;height: 6px;position: relative;flex-shrink: 0;">
+            </div>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 32px;align-items: center;justify-content: flex-start;width: 568px;height: 20px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Vehículos en stock</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Calculadora</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Búsqueda a la carta</span>
+            <div style="border-radius: 0px;background-color: rgba(255,255,255,0.19);width: 1px;height: 20px;position: relative;flex-shrink: 0;">
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 9px;align-items: center;justify-content: flex-start;width: 128px;height: 16px;position: relative;flex-shrink: 0;">
+              <div style="border-radius: 0px;overflow: hidden;width: 15px;height: 15px;position: relative;flex-shrink: 0;">
+                <svg width="12.850000023841858" height="14.10100042819977" viewBox="0 0 12.850000023841858 14.10100042819977" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 7.2%;top: 3%;right: 7.2%;bottom: 3%;width: 85.7%;height: 94%;position: absolute;">
+                  <path d="M2.5 5.0004L2.5 3.1253C2.5 2.2964 2.8292 1.5015 3.4153 0.9154 4.0013 0.3293 4.7962 0 5.625 0 6.4538 0 7.2487 0.3293 7.8347 0.9154 8.4208 1.5015 8.75 2.2964 8.75 3.1253L8.75 5.0004M6.25 8.7507C6.25 9.0959 5.9702 9.3758 5.625 9.3758 5.2798 9.3758 5 9.0959 5 8.7507 5 8.4055 5.2798 8.1257 5.625 8.1257 5.9702 8.1257 6.25 8.4055 6.25 8.7507ZM1.25 5.0004L10 5.0004C10.6904 5.0004 11.25 5.5601 11.25 6.2505L11.25 11.2509C11.25 11.9413 10.6904 12.501 10 12.501L1.25 12.501C0.5596 12.501 0 11.9413 0 11.2509L0 6.2505C0 5.5601 0.5596 5.0004 1.25 5.0004Z" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Área privada</span>
+              <div style="border-radius: 0px;overflow: hidden;width: 15px;height: 15px;position: relative;flex-shrink: 0;">
+                <svg width="7.848999619483948" height="7.848999619483948" viewBox="0 0 7.848999619483948 7.848999619483948" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 23.8%;top: 23.8%;right: 23.8%;bottom: 23.8%;width: 52.3%;height: 52.3%;position: absolute;">
+                  <path d="M0 0L6.249 0M6.249 0L6.249 6.249M6.249 0L0 6.249" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 28px;align-items: start;justify-content: flex-start;width: 760px;height: 540px;position: relative;flex-shrink: 0;padding: 86px 0px 0px 80px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 258px;height: 14px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;background-color: #2864ff;width: 28px;height: 2px;position: relative;flex-shrink: 0;">
+            </div>
+            <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">ORIGEN ALEMÁN. DESTINO BARCELONA.</span>
+          </div>
+          <span class="text" style="display: inline;text-align: left;line-height: 108%;font-size: 66px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">Importación premium de Alemania a Barcelona</span>
+          <span class="text" style="display: inline;text-align: left;line-height: 170%;font-size: 17px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #bec5cf;width: 490px;position: relative;flex-shrink: 0;">Tu próximo coche, sin fronteras ni incertidumbre. Seleccionamos, verificamos e importamos con un precio transparente y el control en tus manos.</span>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: start;justify-content: flex-start;width: 360px;height: 56px;position: relative;flex-shrink: 0;padding: 4px 0px 0px;">
+            <div style="border-radius: 6px;background-color: #2864ff;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: center;width: 184px;height: 52px;position: relative;flex-shrink: 0;padding: 0px 22px;">
+              <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Acceso Clientes</span>
+              <div style="border-radius: 0px;overflow: hidden;width: 18px;height: 18px;position: relative;flex-shrink: 0;">
+                <svg width="9.09879982471466" height="9.09879982471466" viewBox="0 0 9.09879982471466 9.09879982471466" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 24.7%;top: 24.7%;right: 24.7%;bottom: 24.7%;width: 50.5%;height: 50.5%;position: absolute;">
+                  <path d="M0 0L7.4988 0M7.4988 0L7.4988 7.4988M7.4988 0L0 7.4988" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+            </div>
+            <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 6px;background-color: #20252d;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: center;width: 164px;height: 52px;position: relative;flex-shrink: 0;padding: 0px 21px;">
+              <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Ver Servicios</span>
+              <div style="border-radius: 0px;overflow: hidden;width: 18px;height: 18px;position: relative;flex-shrink: 0;">
+                <svg width="12.101199746131899" height="12.101199746131899" viewBox="0 0 12.101199746131899 12.101199746131899" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 16.4%;top: 16.4%;right: 16.4%;bottom: 16.4%;width: 67.2%;height: 67.2%;position: absolute;">
+                  <path d="M5.2506 0L5.2506 10.5012M5.2506 10.5012L10.5012 5.2506M5.2506 10.5012L0 5.2506" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;left: 80px;top: 748px;width: 1280px;height: 15px;position: absolute;">
+          <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #a2aab8;left: 0px;top: calc(-6.5px + 50%);width: max-content;position: absolute;flex-shrink: 0;margin: 0px auto 0px 0px;">CONSULTORÍA AUTOMOTRIZ · SERVICIO INTEGRAL</span>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 14px;align-items: center;justify-content: flex-start;top: calc(-7.5px + 50%);right: 0px;width: 256px;height: 15px;position: absolute;flex-shrink: 0;">
+            <div style="border-radius: 0px;background-color: #a2aab8;width: 40px;height: 1px;position: relative;flex-shrink: 0;">
+            </div>
+            <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Mercedes-Benz · Clase C AMG Line</span>
+          </div>
+        </div>
+      </div>
+      <div style="border-width: 0px 0px 1px;border-style: solid;border-color: #303640;border-radius: 0px;background-color: #0b0d10;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 100px;position: relative;flex-shrink: 0;padding: 0px 80px;">
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 16px;align-items: center;justify-content: flex-start;width: 225px;height: 38px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+          <div style="border-radius: 0px;overflow: hidden;width: 25px;height: 25px;position: relative;flex-shrink: 0;">
+            <svg width="18.264999032020572" height="22.437499297726646" viewBox="0 0 18.264999032020572 22.437499297726646" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 13.5%;top: 5.1%;right: 13.5%;bottom: 5.1%;width: 73.1%;height: 89.7%;position: absolute;">
+              <path d="M5.2078 10.417L7.2909 12.5004 11.4572 8.3336M16.665 11.4592C16.665 16.6677 13.0195 19.2719 8.6866 20.7824 8.4597 20.8593 8.2133 20.8556 7.9888 20.772 3.6455 19.2719 0 16.6677 0 11.4592L0 4.1673C0 3.891 0.1097 3.626 0.3051 3.4307 0.5004 3.2353 0.7653 3.1256 1.0416 3.1256 3.1247 3.1256 5.7286 1.8755 7.5409 0.2921 7.7616 0.1036 8.0423 0 8.3325 0 8.6227 0 8.9034 0.1036 9.1241 0.2921 10.9468 1.8859 13.5403 3.1256 15.6234 3.1256 15.8997 3.1256 16.1646 3.2353 16.3599 3.4307 16.5553 3.626 16.665 3.891 16.665 4.1673L16.665 11.4592Z" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+            </svg>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 6px;align-items: start;justify-content: flex-start;width: 184px;height: 38px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Compra con criterio</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Peritaje independiente en origen</span>
+          </div>
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 16px;align-items: center;justify-content: flex-start;width: 197px;height: 38px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+          <div style="border-radius: 0px;overflow: hidden;width: 25px;height: 25px;position: relative;flex-shrink: 0;">
+            <svg width="18.26499903202057" height="22.442500710487376" viewBox="0 0 18.26499903202057 22.442500710487376" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 13.5%;top: 5.1%;right: 13.5%;bottom: 5.1%;width: 73.1%;height: 89.8%;position: absolute;">
+              <path d="M12.3197 13.3685C11.5385 14.1497 10.4789 14.5885 9.3742 14.5885 8.2695 14.5885 7.21 14.1497 6.4287 13.3685 6.0418 12.9816 5.7349 12.5223 5.5255 12.0168 5.3161 11.5112 5.2083 10.9694 5.2083 10.4222 5.2083 9.8751 5.3161 9.3332 5.5255 8.8277 5.7349 8.3222 6.0418 7.8628 6.4287 7.4759 7.21 6.6948 8.2695 6.256 9.3742 6.256 10.4789 6.256 11.5385 6.6948 12.3197 7.4759M4.1662 10.4216L9.3741 10.4216M0 1.0464C0 0.7701 0.1097 0.5052 0.3051 0.3098 0.5004 0.1145 0.7653 0.0047 1.0416 0.0047 1.2995 0.0033 1.5524 0.0756 1.7707 0.2131L2.7424 0.8381C2.9602 0.9772 3.2131 1.0511 3.4715 1.0511 3.7299 1.0511 3.9829 0.9772 4.2006 0.8381L5.1734 0.2131C5.3912 0.0739 5.6442 0 5.9025 0 6.1609 0 6.4139 0.0739 6.6316 0.2131L7.6034 0.8381C7.8211 0.9772 8.0741 1.0511 8.3325 1.0511 8.5909 1.0511 8.8439 0.9772 9.0616 0.8381L10.0334 0.2131C10.2511 0.0739 10.5041 0 10.7625 0 11.0208 0 11.2738 0.0739 11.4916 0.2131L12.4644 0.8381C12.6821 0.9772 12.9351 1.0511 13.1935 1.0511 13.4519 1.0511 13.7048 0.9772 13.9226 0.8381L14.8943 0.2131C15.1126 0.0756 15.3655 0.0033 15.6234 0.0047 15.8997 0.0047 16.1646 0.1145 16.3599 0.3098 16.5553 0.5052 16.665 0.7701 16.665 1.0464L16.665 19.7961C16.665 20.0724 16.5553 20.3373 16.3599 20.5327 16.1646 20.728 15.8997 20.8378 15.6234 20.8378 15.3655 20.8392 15.1126 20.7669 14.8943 20.6294L13.9226 20.0044C13.7048 19.8653 13.4519 19.7914 13.1935 19.7914 12.9351 19.7914 12.6821 19.8653 12.4644 20.0044L11.4916 20.6294C11.2738 20.7686 11.0208 20.8425 10.7625 20.8425 10.5041 20.8425 10.2511 20.7686 10.0334 20.6294L9.0616 20.0044C8.8439 19.8653 8.5909 19.7914 8.3325 19.7914 8.0741 19.7914 7.8211 19.8653 7.6034 20.0044L6.6316 20.6294C6.4139 20.7686 6.1609 20.8425 5.9025 20.8425 5.6442 20.8425 5.3912 20.7686 5.1734 20.6294L4.2006 20.0044C3.9829 19.8653 3.7299 19.7914 3.4715 19.7914 3.2131 19.7914 2.9602 19.8653 2.7424 20.0044L1.7707 20.6294C1.5524 20.7669 1.2995 20.8392 1.0416 20.8378 0.7653 20.8378 0.5004 20.728 0.3051 20.5327 0.1097 20.3373 0 20.0724 0 19.7961L0 1.0464Z" transform=" translate(0.800000011920929 0.8000000119209291)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+            </svg>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 6px;align-items: start;justify-content: flex-start;width: 156px;height: 38px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Sin costes inesperados</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Presupuesto llave en mano</span>
+          </div>
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 16px;align-items: center;justify-content: flex-start;width: 234px;height: 38px;position: relative;flex-shrink: 0;">
+          <div style="border-radius: 0px;overflow: hidden;width: 25px;height: 25px;position: relative;flex-shrink: 0;">
+            <svg width="22.432501379093143" height="22.435001015663147" viewBox="0 0 22.432501379093143 22.435001015663147" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 5.1%;top: 5.1%;right: 5.1%;bottom: 5.1%;width: 89.7%;height: 89.7%;position: absolute;">
+              <path d="M6.9934 12.501L3.1288 12.501C2.9104 12.5011 2.6975 12.5698 2.5203 12.6975 2.3431 12.8252 2.2105 13.0054 2.1413 13.2125L0.0537 19.463C0.0014 19.6196-0.013 19.7864 0.0118 19.9496 0.0366 20.1128 0.0998 20.2679 0.1962 20.4018 0.2927 20.5358 0.4196 20.645 0.5665 20.7203 0.7134 20.7956 0.8762 20.8349 1.0412 20.835L19.7916 20.835C19.9566 20.8349 20.1192 20.7956 20.266 20.7203 20.4128 20.6451 20.5396 20.536 20.636 20.4022 20.7325 20.2683 20.7957 20.1134 20.8206 19.9503 20.8455 19.7873 20.8313 19.6206 20.7791 19.4641L18.6958 13.2136C18.6266 13.006 18.494 12.8255 18.3165 12.6976 18.1391 12.5697 17.9259 12.5009 17.7072 12.501L13.8404 12.501M16.667 6.2505C16.667 10.0143 12.6367 13.9897 11.0492 15.4127 10.8676 15.5514 10.6454 15.6266 10.4169 15.6266 10.1883 15.6266 9.9662 15.5514 9.7846 15.4127 8.1981 13.9897 4.1667 10.0143 4.1667 6.2505 4.1667 4.5928 4.8252 3.0029 5.9974 1.8307 7.1695 0.6585 8.7592 0 10.4169 0 12.0745 0 13.6642 0.6585 14.8364 1.8307 16.0085 3.0029 16.667 4.5928 16.667 6.2505ZM12.5002 6.2505C12.5002 7.4012 11.5675 8.334 10.4169 8.334 9.2663 8.334 8.3335 7.4012 8.3335 6.2505 8.3335 5.0998 9.2663 4.167 10.4169 4.167 11.5675 4.167 12.5002 5.0998 12.5002 6.2505Z" transform=" translate(0.8000000119032238 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+            </svg>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 6px;align-items: start;justify-content: flex-start;width: 193px;height: 38px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Cada kilómetro, visible</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Seguimiento GPS hasta Barcelona</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="border-radius: 0px;background-color: #101215;overflow: hidden;display: flex;flex-direction: column;row-gap: 40px;align-items: start;justify-content: flex-start;width: 100%;height: 879px;position: relative;flex-shrink: 0;padding: 96px 80px;">
+      <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 80px;align-items: end;justify-content: flex-start;width: 100%;height: 122px;position: relative;flex-shrink: 0;">
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 122px;position: relative;flex-grow: 1;flex-basis: 0px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 16px;align-items: start;justify-content: flex-start;width: 100%;height: 122px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 174px;height: 16px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">01</span>
+              <div style="border-radius: 0px;background-color: #2864ff;width: 24px;height: 1px;position: relative;flex-shrink: 0;">
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">SELECCIÓN APCARS</span>
+            </div>
+            <span class="text" style="display: inline;text-align: left;line-height: 114%;font-size: 42px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">Vehículos en stock</span>
+            <span class="text" style="display: inline;text-align: left;line-height: 165%;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: 100%;position: relative;flex-shrink: 0;">Ya están aquí. Solo falta que elijas el tuyo.</span>
+          </div>
+        </div>
+        <div style="border-radius: 100px;background-color: #172844;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 7px;align-items: center;justify-content: flex-start;width: 160px;height: 27px;position: relative;flex-shrink: 0;padding: 7px 11px;">
+          <div style="border-radius: 3px;background-color: #94b5ff;width: 6px;height: 6px;position: relative;flex-shrink: 0;">
+          </div>
+          <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">3 vehículos disponibles</span>
+        </div>
+      </div>
+      <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 24px;align-items: start;justify-content: flex-start;width: 100%;height: 468px;position: relative;flex-shrink: 0;">
+        <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 12px;background-color: #191d23;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 468px;position: relative;flex-grow: 1;flex-basis: 0px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 240px;position: relative;flex-shrink: 0;padding: 16px;">
+            <div style="overflow: hidden;border-radius: 0px;left: 0px;top: 0px;width: 411px;height: 240px;position: absolute;">
+              <img src="../_assets/images/a3a248ef1ca95030a6b6892ab3ed7fd4440060cc.jpg" alt="Vehículo" data-abovethefold=1 style="inset: 0;width: 100%;height: 100%;position: absolute;object-fit: cover;">
+            </div>
+            <div style="border-radius: 6px;background-color: rgba(16,18,21,0.91);overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 6px;align-items: center;justify-content: flex-start;width: 109px;height: 24px;position: relative;flex-shrink: 0;padding: 6px 10px;">
+              <div style="border-radius: 3px;background-color: #7be0bc;width: 5px;height: 5px;position: relative;flex-shrink: 0;">
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">EN BARCELONA</span>
+            </div>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 20px;align-items: start;justify-content: flex-start;width: 100%;height: 228px;position: relative;flex-shrink: 0;padding: 24px;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 8px;align-items: start;justify-content: flex-start;width: 100%;height: 52px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 23px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">Volkswagen Golf 7</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">1.5 TSI EVO · Sport DSG</span>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 15px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">2019</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">62.400 km</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Gasolina</span>
+            </div>
+            <div style="border-radius: 0px;background-color: #303640;width: 100%;height: 1px;position: relative;flex-shrink: 0;">
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 52px;position: relative;flex-shrink: 0;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 5px;align-items: start;justify-content: flex-start;width: 157px;height: 51px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 27px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">19.900 €</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Precio cerrado · llave en mano</span>
+              </div>
+              <div style="border-radius: 6px;background-color: #2864ff;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: center;width: 134px;height: 52px;position: relative;flex-shrink: 0;padding: 0px 22px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Comprar</span>
+                <div style="border-radius: 0px;overflow: hidden;width: 18px;height: 18px;position: relative;flex-shrink: 0;">
+                  <svg width="9.09879982471466" height="9.09879982471466" viewBox="0 0 9.09879982471466 9.09879982471466" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 24.7%;top: 24.7%;right: 24.7%;bottom: 24.7%;width: 50.5%;height: 50.5%;position: absolute;">
+                    <path d="M0 0L7.4988 0M7.4988 0L7.4988 7.4988M7.4988 0L0 7.4988" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 12px;background-color: #191d23;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 468px;position: relative;flex-grow: 1;flex-basis: 0px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 240px;position: relative;flex-shrink: 0;padding: 16px;">
+            <div style="overflow: hidden;border-radius: 0px;left: 0px;top: 0px;width: 411px;height: 240px;position: absolute;">
+              <img src="../_assets/images/7b6172afa7b326a412ffc1262fe520ae51577d05.jpg" alt="Vehículo" data-abovethefold=1 style="inset: 0;width: 100%;height: 100%;position: absolute;object-fit: cover;">
+            </div>
+            <div style="border-radius: 6px;background-color: rgba(16,18,21,0.91);overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 6px;align-items: center;justify-content: flex-start;width: 109px;height: 24px;position: relative;flex-shrink: 0;padding: 6px 10px;">
+              <div style="border-radius: 3px;background-color: #7be0bc;width: 5px;height: 5px;position: relative;flex-shrink: 0;">
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">EN BARCELONA</span>
+            </div>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 20px;align-items: start;justify-content: flex-start;width: 100%;height: 228px;position: relative;flex-shrink: 0;padding: 24px;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 8px;align-items: start;justify-content: flex-start;width: 100%;height: 52px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 23px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">MINI Cooper</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">1.5 Cooper · Steptronic</span>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 15px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">2021</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">38.200 km</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Gasolina</span>
+            </div>
+            <div style="border-radius: 0px;background-color: #303640;width: 100%;height: 1px;position: relative;flex-shrink: 0;">
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 52px;position: relative;flex-shrink: 0;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 5px;align-items: start;justify-content: flex-start;width: 157px;height: 51px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 27px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">22.500 €</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Precio cerrado · llave en mano</span>
+              </div>
+              <div style="border-radius: 6px;background-color: #2864ff;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: center;width: 134px;height: 52px;position: relative;flex-shrink: 0;padding: 0px 22px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Comprar</span>
+                <div style="border-radius: 0px;overflow: hidden;width: 18px;height: 18px;position: relative;flex-shrink: 0;">
+                  <svg width="9.09879982471466" height="9.09879982471466" viewBox="0 0 9.09879982471466 9.09879982471466" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 24.7%;top: 24.7%;right: 24.7%;bottom: 24.7%;width: 50.5%;height: 50.5%;position: absolute;">
+                    <path d="M0 0L7.4988 0M7.4988 0L7.4988 7.4988M7.4988 0L0 7.4988" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 12px;background-color: #191d23;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 468px;position: relative;flex-grow: 1;flex-basis: 0px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 240px;position: relative;flex-shrink: 0;padding: 16px;">
+            <div style="overflow: hidden;border-radius: 0px;left: 0px;top: 0px;width: 411px;height: 240px;position: absolute;">
+              <img src="../_assets/images/b157fa3bc3410449bd63a774fe3a7dc60dba919a.jpg" alt="Vehículo" data-abovethefold=1 style="inset: 0;width: 100%;height: 100%;position: absolute;object-fit: cover;">
+            </div>
+            <div style="border-radius: 6px;background-color: rgba(16,18,21,0.91);overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 6px;align-items: center;justify-content: flex-start;width: 109px;height: 24px;position: relative;flex-shrink: 0;padding: 6px 10px;">
+              <div style="border-radius: 3px;background-color: #7be0bc;width: 5px;height: 5px;position: relative;flex-shrink: 0;">
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">EN BARCELONA</span>
+            </div>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 20px;align-items: start;justify-content: flex-start;width: 100%;height: 228px;position: relative;flex-shrink: 0;padding: 24px;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 8px;align-items: start;justify-content: flex-start;width: 100%;height: 52px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 23px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">BMW 320d Touring</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">M Sport · Automático</span>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 15px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">2020</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">74.800 km</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Diésel</span>
+            </div>
+            <div style="border-radius: 0px;background-color: #303640;width: 100%;height: 1px;position: relative;flex-shrink: 0;">
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 52px;position: relative;flex-shrink: 0;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 5px;align-items: start;justify-content: flex-start;width: 157px;height: 51px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 27px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">31.900 €</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Precio cerrado · llave en mano</span>
+              </div>
+              <div style="border-radius: 6px;background-color: #2864ff;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: center;width: 134px;height: 52px;position: relative;flex-shrink: 0;padding: 0px 22px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Comprar</span>
+                <div style="border-radius: 0px;overflow: hidden;width: 18px;height: 18px;position: relative;flex-shrink: 0;">
+                  <svg width="9.09879982471466" height="9.09879982471466" viewBox="0 0 9.09879982471466 9.09879982471466" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 24.7%;top: 24.7%;right: 24.7%;bottom: 24.7%;width: 50.5%;height: 50.5%;position: absolute;">
+                    <path d="M0 0L7.4988 0M7.4988 0L7.4988 7.4988M7.4988 0L0 7.4988" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 17px;position: relative;flex-shrink: 0;">
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 10px;align-items: center;justify-content: flex-start;width: 467px;height: 17px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+          <div style="border-radius: 0px;overflow: hidden;width: 17px;height: 17px;position: relative;flex-shrink: 0;">
+            <svg width="15.767799973487854" height="15.767799973487854" viewBox="0 0 15.767799973487854 15.767799973487854" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 3.6%;top: 3.6%;right: 3.6%;bottom: 3.6%;width: 92.8%;height: 92.8%;position: absolute;">
+              <path d="M4.9587 7.0839L6.3755 8.5007 9.2091 5.6671M14.1678 7.0839C14.1678 10.9962 10.9962 14.1678 7.0839 14.1678 3.1716 14.1678 0 10.9962 0 7.0839 0 3.1716 3.1716 0 7.0839 0 10.9962 0 14.1678 3.1716 14.1678 7.0839Z" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+            </svg>
+          </div>
+          <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Revisados, matriculados y con 12 meses de garantía. Sin trámites pendientes.</span>
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 8px;align-items: center;justify-content: flex-start;width: 139px;height: 15px;position: relative;flex-shrink: 0;">
+          <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">Habla con un asesor</span>
+          <div style="border-radius: 0px;overflow: hidden;width: 15px;height: 15px;position: relative;flex-shrink: 0;">
+            <svg width="7.848999619483948" height="7.848999619483948" viewBox="0 0 7.848999619483948 7.848999619483948" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 23.8%;top: 23.8%;right: 23.8%;bottom: 23.8%;width: 52.3%;height: 52.3%;position: absolute;">
+              <path d="M0 0L6.249 0M6.249 0L6.249 6.249M6.249 0L0 6.249" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="border-radius: 0px;background-color: #101215;overflow: hidden;display: flex;flex-direction: column;row-gap: 40px;align-items: start;justify-content: flex-start;width: 100%;height: 827px;position: relative;flex-shrink: 0;padding: 96px 80px;">
+      <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 80px;align-items: end;justify-content: flex-start;width: 100%;height: 122px;position: relative;flex-shrink: 0;">
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 122px;position: relative;flex-grow: 1;flex-basis: 0px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 16px;align-items: start;justify-content: flex-start;width: 100%;height: 122px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 196px;height: 16px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">03</span>
+              <div style="border-radius: 0px;background-color: #2864ff;width: 24px;height: 1px;position: relative;flex-shrink: 0;">
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">SI AÚN NO HAS ELEGIDO</span>
+            </div>
+            <span class="text" style="display: inline;text-align: left;line-height: 114%;font-size: 42px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">Búsqueda a la carta</span>
+            <span class="text" style="display: inline;text-align: left;line-height: 165%;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: 100%;position: relative;flex-shrink: 0;">No tienes que encontrarlo todo. Solo saber lo que quieres.</span>
+          </div>
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 10px;align-items: center;justify-content: flex-start;width: 184px;height: 20px;position: relative;flex-shrink: 0;">
+          <div style="border-radius: 0px;overflow: hidden;width: 20px;height: 20px;position: relative;flex-shrink: 0;">
+            <svg width="16.600000023841858" height="16.600000023841858" viewBox="0 0 16.600000023841858 16.600000023841858" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 8.5%;top: 8.5%;right: 8.5%;bottom: 8.5%;width: 83%;height: 83%;position: absolute;">
+              <path d="M0 3.3333L0 1.6667C0 1.2246 0.1756 0.8007 0.4882 0.4882 0.8007 0.1756 1.2246 0 1.6667 0L3.3333 0M11.6667 0L13.3333 0C13.7754 0 14.1993 0.1756 14.5118 0.4882 14.8244 0.8007 15 1.2246 15 1.6667L15 3.3333M15 11.6667L15 13.3333C15 13.7754 14.8244 14.1993 14.5118 14.5118 14.1993 14.8244 13.7754 15 13.3333 15L11.6667 15M3.3333 15L1.6667 15C1.2246 15 0.8007 14.8244 0.4882 14.5118 0.1756 14.1993 0 13.7754 0 13.3333L0 11.6667M10.833 10.833L9.2497 9.2497M10 7.5C10 8.8807 8.8807 10 7.5 10 6.1193 10 5 8.8807 5 7.5 5 6.1193 6.1193 5 7.5 5 8.8807 5 10 6.1193 10 7.5Z" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+            </svg>
+          </div>
+          <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Selección por especialistas</span>
+        </div>
+      </div>
+      <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 16px;background-color: #191d23;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 473px;position: relative;flex-shrink: 0;">
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-end;width: 440px;height: 100%;min-height: 473px;position: relative;flex-shrink: 0;padding: 32px;">
+          <div style="overflow: hidden;border-radius: 0px;left: 0px;top: 0px;width: 440px;height: 473px;position: absolute;">
+            <img src="../_assets/images/bb0eebe01b19c2b7674396c3949e4653c12fc3b5.jpg" alt="Interior de alta gama" data-abovethefold=0 style="inset: 0;width: 100%;height: 100%;position: absolute;object-fit: cover;">
+          </div>
+          <div style="border-radius: 0px;background-image: linear-gradient(180deg, rgba(11,13,16,0) 0%, rgba(11,13,16,0.94) 100%);background-blend-mode: normal;left: 0px;top: 0px;width: 440px;height: 473px;position: absolute;">
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 16px;align-items: start;justify-content: flex-start;width: 100%;height: 209px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">TAN EXIGENTES COMO TÚ.</span>
+            <span class="text" style="display: inline;text-align: left;line-height: 120%;font-size: 33px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">El coche que imaginas. La selección que mereces.</span>
+            <span class="text" style="display: inline;text-align: left;line-height: 170%;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: 100%;position: relative;flex-shrink: 0;">Accedemos al mercado alemán para encontrar la unidad que encaja contigo.</span>
+          </div>
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 26px;align-items: start;justify-content: flex-start;width: 100%;height: 436px;position: relative;flex-grow: 1;flex-basis: 0px;padding: 40px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 10px;align-items: start;justify-content: flex-start;width: 100%;height: 87px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 24px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">Cuéntanos tu próximo destino.</span>
+            <span class="text" style="display: inline;text-align: left;line-height: 170%;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: 100%;position: relative;flex-shrink: 0;">Definimos tus prioridades, filtramos el mercado y te presentamos una selección verificada. Tú tienes la última palabra.</span>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 20px;align-items: start;justify-content: flex-start;width: 100%;height: 82px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 82px;position: relative;flex-grow: 1;flex-basis: 0px;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 10px;align-items: start;justify-content: flex-start;width: 100%;height: 82px;position: relative;flex-shrink: 0;">
+                <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">¿Qué modelo buscas?</span>
+                <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 6px;background-color: #101215;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 56px;position: relative;flex-shrink: 0;padding: 0px 15px;">
+                  <span class="text" style="display: inline;text-align: left;font-size: 15px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Audi A3 Sportback</span>
+                </div>
+              </div>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 245px;height: 82px;position: relative;flex-shrink: 0;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 10px;align-items: start;justify-content: flex-start;width: 100%;height: 82px;position: relative;flex-shrink: 0;">
+                <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Presupuesto máximo (€)</span>
+                <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 6px;background-color: #101215;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 56px;position: relative;flex-shrink: 0;padding: 0px 15px;">
+                  <span class="text" style="display: inline;text-align: left;font-size: 15px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">30.000</span>
+                  <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">€</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 10px;align-items: start;justify-content: flex-start;width: 100%;height: 57px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Tus imprescindibles</span>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 8px;align-items: start;justify-content: flex-start;width: 373px;height: 31px;position: relative;flex-shrink: 0;">
+              <div style="border-width: 1px;border-style: solid;border-color: #345281;border-radius: 6px;background-color: #172844;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 7px;align-items: center;justify-content: flex-start;width: 101px;height: 31px;position: relative;flex-shrink: 0;padding: 8px 10px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">Automático</span>
+                <div style="border-radius: 0px;overflow: hidden;width: 12px;height: 12px;position: relative;flex-shrink: 0;">
+                  <svg width="9.599199891090393" height="7.0995999574661255" viewBox="0 0 9.599199891090393 7.0995999574661255" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 10%;top: 18.3%;right: 10%;bottom: 22.5%;width: 80%;height: 59.2%;position: absolute;">
+                    <path d="M7.9992 0L2.4997 5.4996 0 2.9998" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                  </svg>
+                </div>
+              </div>
+              <div style="border-width: 1px;border-style: solid;border-color: #345281;border-radius: 6px;background-color: #172844;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 7px;align-items: center;justify-content: flex-start;width: 105px;height: 31px;position: relative;flex-shrink: 0;padding: 8px 10px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">Desde 2020</span>
+                <div style="border-radius: 0px;overflow: hidden;width: 12px;height: 12px;position: relative;flex-shrink: 0;">
+                  <svg width="9.599199891090393" height="7.0995999574661255" viewBox="0 0 9.599199891090393 7.0995999574661255" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 10%;top: 18.3%;right: 10%;bottom: 22.5%;width: 80%;height: 59.2%;position: absolute;">
+                    <path d="M7.9992 0L2.4997 5.4996 0 2.9998" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                  </svg>
+                </div>
+              </div>
+              <div style="border-width: 1px;border-style: solid;border-color: #345281;border-radius: 6px;background-color: #172844;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 7px;align-items: center;justify-content: flex-start;width: 151px;height: 31px;position: relative;flex-shrink: 0;padding: 8px 10px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">Menos de 60.000 km</span>
+                <div style="border-radius: 0px;overflow: hidden;width: 12px;height: 12px;position: relative;flex-shrink: 0;">
+                  <svg width="9.599199891090393" height="7.0995999574661255" viewBox="0 0 9.599199891090393 7.0995999574661255" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 10%;top: 18.3%;right: 10%;bottom: 22.5%;width: 80%;height: 59.2%;position: absolute;">
+                    <path d="M7.9992 0L2.4997 5.4996 0 2.9998" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 24px;align-items: center;justify-content: flex-start;width: 100%;height: 52px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 6px;background-color: #2864ff;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: center;width: 209px;height: 52px;position: relative;flex-shrink: 0;padding: 0px 22px;">
+              <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Encontrad mi coche</span>
+              <div style="border-radius: 0px;overflow: hidden;width: 18px;height: 18px;position: relative;flex-shrink: 0;">
+                <svg width="9.09879982471466" height="9.09879982471466" viewBox="0 0 9.09879982471466 9.09879982471466" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 24.7%;top: 24.7%;right: 24.7%;bottom: 24.7%;width: 50.5%;height: 50.5%;position: absolute;">
+                  <path d="M0 0L7.4988 0M7.4988 0L7.4988 7.4988M7.4988 0L0 7.4988" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+            </div>
+            <span class="text" style="display: inline;text-align: left;line-height: 160%;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: 100%;position: relative;flex-grow: 1;flex-basis: 0px;">Primera propuesta en 48 h laborables. Sin compromiso de compra.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="border-width: 1px 0px;border-style: solid;border-color: #303640;border-radius: 0px;background-color: #14171c;overflow: hidden;display: flex;flex-direction: column;row-gap: 40px;align-items: start;justify-content: flex-start;width: 100%;height: 978px;position: relative;flex-shrink: 0;padding: 95px 80px;">
+      <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 100px;align-items: end;justify-content: flex-start;width: 100%;height: 128px;position: relative;flex-shrink: 0;">
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 630px;height: 128px;position: relative;flex-shrink: 0;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 16px;align-items: start;justify-content: flex-start;width: 100%;height: 128px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 259px;height: 16px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">02</span>
+              <div style="border-radius: 0px;background-color: #2864ff;width: 24px;height: 1px;position: relative;flex-shrink: 0;">
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">SI YA HAS ENCONTRADO TU COCHE</span>
+            </div>
+            <span class="text" style="display: inline;text-align: left;line-height: 114%;font-size: 42px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">Tu coche. Todas las cifras claras.</span>
+          </div>
+        </div>
+        <span class="text" style="display: inline;text-align: left;line-height: 170%;font-size: 15px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: 100%;position: relative;flex-grow: 1;flex-basis: 0px;">¿Has visto un vehículo en Alemania? Calcula cuánto cuesta tenerlo en Barcelona, listo para conducir.</span>
+      </div>
+      <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 24px;align-items: start;justify-content: flex-start;width: 100%;height: 618px;position: relative;flex-shrink: 0;">
+        <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 16px;background-color: #191d23;overflow: hidden;display: flex;flex-direction: column;row-gap: 28px;align-items: start;justify-content: flex-start;width: 552px;height: 100%;position: relative;flex-shrink: 0;padding: 31px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 25px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 21px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">Calculadora de costes</span>
+            <div style="border-radius: 0px;overflow: hidden;width: 22px;height: 22px;position: relative;flex-shrink: 0;">
+              <svg width="16.265199303627014" height="19.934800744056698" viewBox="0 0 16.265199303627014 19.934800744056698" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 13%;top: 4.7%;right: 13%;bottom: 4.7%;width: 73.9%;height: 90.6%;position: absolute;">
+                <path d="M3.6663 3.667L10.9989 3.667M10.9989 11.0009L10.9989 14.6678M10.9989 7.3339L11.0081 7.3339M7.3326 7.3339L7.3418 7.3339M3.6663 7.3339L3.6755 7.3339M7.3326 11.0009L7.3418 11.0009M3.6663 11.0009L3.6755 11.0009M7.3326 14.6678L7.3418 14.6678M3.6663 14.6678L3.6755 14.6678M1.8331 0L12.832 0C13.8445 0 14.6652 0.8209 14.6652 1.8335L14.6652 16.5013C14.6652 17.5139 13.8445 18.3348 12.832 18.3348L1.8331 18.3348C0.8207 18.3348 0 17.5139 0 16.5013L0 1.8335C0 0.8209 0.8207 0 1.8331 0Z" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+              </svg>
+            </div>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 22px;align-items: start;justify-content: flex-start;width: 100%;height: 318px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 10px;align-items: start;justify-content: flex-start;width: 100%;height: 110px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Precio origen</span>
+              <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 6px;background-color: #101215;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 56px;position: relative;flex-shrink: 0;padding: 0px 15px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 15px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">28.000</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">€</span>
+              </div>
+              <span class="text" style="display: inline;text-align: left;line-height: 150%;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: 100%;position: relative;flex-shrink: 0;">Precio de compra en Alemania, IVA incluido.</span>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 10px;align-items: start;justify-content: flex-start;width: 100%;height: 82px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Modelo</span>
+              <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 6px;background-color: #101215;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 56px;position: relative;flex-shrink: 0;padding: 0px 15px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 15px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">Mercedes-Benz C 200</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">⌄</span>
+              </div>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 10px;align-items: start;justify-content: flex-start;width: 100%;height: 82px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Enlace del anuncio (opcional)</span>
+              <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 6px;background-color: #101215;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 56px;position: relative;flex-shrink: 0;padding: 0px 15px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 15px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">https://www.mobile.de/…</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">↗</span>
+              </div>
+            </div>
+          </div>
+          <div style="border-radius: 6px;background-color: #172844;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: start;justify-content: flex-start;width: 100%;height: 72px;position: relative;flex-shrink: 0;padding: 16px;">
+            <div style="border-radius: 0px;overflow: hidden;width: 18px;height: 18px;position: relative;flex-shrink: 0;">
+              <svg width="16.601199746131897" height="16.601199746131897" viewBox="0 0 16.601199746131897 16.601199746131897" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 3.9%;top: 3.9%;right: 3.9%;bottom: 3.9%;width: 92.2%;height: 92.2%;position: absolute;">
+                <path d="M7.5006 10.5008L7.5006 7.5006M7.5006 4.5004L7.5081 4.5004M15.0012 7.5006C15.0012 11.6431 11.6431 15.0012 7.5006 15.0012 3.3581 15.0012 0 11.6431 0 7.5006 0 3.3581 3.3581 0 7.5006 0 11.6431 0 15.0012 3.3581 15.0012 7.5006Z" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+              </svg>
+            </div>
+            <span class="text" style="display: inline;text-align: left;line-height: 165%;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: 100%;position: relative;flex-grow: 1;flex-basis: 0px;">La estimación se actualiza con los datos del vehículo. Validamos documentación, emisiones y fiscalidad antes de la compra.</span>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 8px;align-items: center;justify-content: flex-start;width: 215px;height: 15px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">¿Necesitas ayuda con el anuncio?</span>
+            <div style="border-radius: 0px;overflow: hidden;width: 15px;height: 15px;position: relative;flex-shrink: 0;">
+              <svg width="7.848999619483948" height="7.848999619483948" viewBox="0 0 7.848999619483948 7.848999619483948" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 23.8%;top: 23.8%;right: 23.8%;bottom: 23.8%;width: 52.3%;height: 52.3%;position: absolute;">
+                <path d="M0 0L6.249 0M6.249 0L6.249 6.249M6.249 0L0 6.249" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #a2aab8;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 16px;background-color: #0b0d10;overflow: hidden;display: flex;flex-direction: column;row-gap: 24px;align-items: start;justify-content: flex-start;width: 100%;height: 100%;position: relative;flex-grow: 1;flex-basis: 0px;padding: 31px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 27px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 21px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">Tu presupuesto de importación</span>
+            <div style="border-radius: 100px;background-color: #172844;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 7px;align-items: center;justify-content: flex-start;width: 81px;height: 27px;position: relative;flex-shrink: 0;padding: 7px 11px;">
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">Estimación</span>
+            </div>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 19px;align-items: start;justify-content: flex-start;width: 100%;height: 271px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 35px;position: relative;flex-shrink: 0;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 5px;align-items: start;justify-content: flex-start;width: 187px;height: 35px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Vehículo en origen</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: max-content;position: relative;flex-shrink: 0;">Mercedes-Benz C 200 · IVA incluido</span>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 15px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">28.000 €</span>
+            </div>
+            <div style="border-radius: 0px;background-color: #303640;width: 100%;height: 1px;position: relative;flex-shrink: 0;">
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 35px;position: relative;flex-shrink: 0;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 5px;align-items: start;justify-content: flex-start;width: 240px;height: 35px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Transporte</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: max-content;position: relative;flex-shrink: 0;">Recogida en Alemania y transporte asegurado</span>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 15px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">1.250 €</span>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 35px;position: relative;flex-shrink: 0;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 5px;align-items: start;justify-content: flex-start;width: 184px;height: 35px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">ITV</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: max-content;position: relative;flex-shrink: 0;">Inspección técnica y ficha reducida</span>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 15px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">210 €</span>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 35px;position: relative;flex-shrink: 0;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 5px;align-items: start;justify-content: flex-start;width: 166px;height: 35px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">DGT</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: max-content;position: relative;flex-shrink: 0;">Tasas de matriculación y placas</span>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 15px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">110 €</span>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 35px;position: relative;flex-shrink: 0;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 5px;align-items: start;justify-content: flex-start;width: 228px;height: 35px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Honorarios</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: max-content;position: relative;flex-shrink: 0;">Peritaje, gestión integral y acompañamiento</span>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 15px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">1.490 €</span>
+            </div>
+          </div>
+          <div style="border-radius: 0px;background-color: #303640;width: 100%;height: 1px;position: relative;flex-shrink: 0;">
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 51px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 7px;align-items: start;justify-content: flex-start;width: 181px;height: 37px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+              <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Total llave en mano</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">IVA incluido · entrega en Barcelona</span>
+            </div>
+            <span class="text" style="display: inline;text-align: left;font-size: 42px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">31.060 €</span>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: start;justify-content: flex-start;width: 100%;height: 52px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 52px;position: relative;flex-grow: 1;flex-basis: 0px;">
+              <div style="border-radius: 6px;background-color: #2864ff;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: center;width: 100%;height: 52px;position: relative;flex-shrink: 0;padding: 0px 22px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Me interesa</span>
+                <div style="border-radius: 0px;overflow: hidden;width: 18px;height: 18px;position: relative;flex-shrink: 0;">
+                  <svg width="9.09879982471466" height="9.09879982471466" viewBox="0 0 9.09879982471466 9.09879982471466" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 24.7%;top: 24.7%;right: 24.7%;bottom: 24.7%;width: 50.5%;height: 50.5%;position: absolute;">
+                    <path d="M0 0L7.4988 0M7.4988 0L7.4988 7.4988M7.4988 0L0 7.4988" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 52px;position: relative;flex-grow: 1;flex-basis: 0px;">
+              <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 6px;background-color: #20252d;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: center;width: 100%;height: 52px;position: relative;flex-shrink: 0;padding: 0px 21px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">No me interesa</span>
+              </div>
+            </div>
+          </div>
+          <span class="text" style="display: inline;text-align: left;line-height: 165%;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: 100%;position: relative;flex-shrink: 0;">Ejemplo para vehículo usado de la UE, IVA pagado y emisiones ≤ 120 g/km: impuesto de matriculación 0 €. Sin aranceles. El importe definitivo se confirma tras revisar la ficha técnica.</span>
+        </div>
+      </div>
+    </div>
+    <div style="border-width: 1px 0px 0px;border-style: solid;border-color: #303640;border-radius: 0px;background-color: #14171c;overflow: hidden;display: flex;flex-direction: column;row-gap: 40px;align-items: start;justify-content: flex-start;width: 100%;height: 1340px;position: relative;flex-shrink: 0;padding: 95px 80px 96px;">
+      <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 90px;align-items: end;justify-content: flex-start;width: 100%;height: 122px;position: relative;flex-shrink: 0;">
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 122px;position: relative;flex-grow: 1;flex-basis: 0px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 16px;align-items: start;justify-content: flex-start;width: 100%;height: 122px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 229px;height: 16px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">04</span>
+              <div style="border-radius: 0px;background-color: #2864ff;width: 24px;height: 1px;position: relative;flex-shrink: 0;">
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">ÁREA PRIVADA · RASTREO GPS</span>
+            </div>
+            <span class="text" style="display: inline;text-align: left;line-height: 114%;font-size: 42px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">Tu importación, bajo control.</span>
+            <span class="text" style="display: inline;text-align: left;line-height: 165%;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: 100%;position: relative;flex-shrink: 0;">Desde la firma hasta las llaves. Cada etapa, en un solo lugar.</span>
+          </div>
+        </div>
+        <div style="border-radius: 100px;background-color: #172844;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 7px;align-items: center;justify-content: flex-start;width: 125px;height: 27px;position: relative;flex-shrink: 0;padding: 7px 11px;">
+          <div style="border-radius: 3px;background-color: #94b5ff;width: 6px;height: 6px;position: relative;flex-shrink: 0;">
+          </div>
+          <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">Conexión segura</span>
+        </div>
+      </div>
+      <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 16px;background-color: #0b0d10;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 986px;position: relative;flex-shrink: 0;">
+        <div style="border-width: 0px 0px 1px;border-style: solid;border-color: #303640;border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 88px;position: relative;flex-shrink: 0;padding: 0px 24px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 28px;align-items: center;justify-content: flex-start;width: 335px;height: 18px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 9px;align-items: center;justify-content: flex-start;width: 122px;height: 18px;position: relative;flex-shrink: 0;">
+              <div style="border-radius: 0px;overflow: hidden;width: 18px;height: 18px;position: relative;flex-shrink: 0;">
+                <svg width="15.100000023841858" height="16.601199746131897" viewBox="0 0 15.100000023841858 16.601199746131897" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 8.1%;top: 3.9%;right: 8.1%;bottom: 3.9%;width: 83.9%;height: 92.2%;position: absolute;">
+                  <path d="M4.5 12.751C4.5 13.9938 3.4926 15.0012 2.25 15.0012 1.0074 15.0012 0 13.9938 0 12.751 0 11.5083 1.0074 10.5008 2.25 10.5008 3.4926 10.5008 4.5 11.5083 4.5 12.751ZM4.5 12.751L10.875 12.751C11.5712 12.751 12.2389 12.4744 12.7312 11.9821 13.2234 11.4898 13.5 10.8221 13.5 10.1258 13.5 9.4296 13.2234 8.7618 12.7312 8.2695 12.2389 7.7772 11.5712 7.5006 10.875 7.5006L2.625 7.5006C1.9288 7.5006 1.2611 7.224 0.7688 6.7317 0.2766 6.2394 0 5.5716 0 4.8754 0 4.1791 0.2766 3.5114 0.7688 3.0191 1.2611 2.5268 1.9288 2.2502 2.625 2.2502L9 2.2502M9 2.2502C9 3.4929 10.0074 4.5004 11.25 4.5004 12.4926 4.5004 13.5 3.4929 13.5 2.2502 13.5 1.0074 12.4926 0 11.25 0 10.0074 0 9 1.0074 9 2.2502Z" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Mi importación</span>
+            </div>
+            <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Documentación</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Mi asesor</span>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 176px;height: 36px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 5px;align-items: end;justify-content: flex-start;width: 102px;height: 33px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Hola, Alejandro</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: max-content;position: relative;flex-shrink: 0;">EXP. APC-2026-084</span>
+            </div>
+            <div style="border-radius: 18px;background-color: #172844;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;width: 36px;height: 36px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">AM</span>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;width: 14px;height: 14px;position: relative;flex-shrink: 0;">
+              <svg width="8.600000023841858" height="5.100000023841858" viewBox="0 0 8.600000023841858 5.100000023841858" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 19.3%;top: 31.8%;right: 19.3%;bottom: 31.8%;width: 61.4%;height: 36.4%;position: absolute;">
+                <path d="M0 0L3.5 3.5 7 0" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #a2aab8;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 100px;position: relative;flex-shrink: 0;padding: 24px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 8px;align-items: start;justify-content: flex-start;width: 369px;height: 52px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+            <span class="text" style="display: inline;text-align: left;font-size: 24px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Tu Mercedes ya está en camino.</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Múnich, Alemania → Barcelona, España · Transporte asegurado</span>
+          </div>
+          <div style="border-radius: 100px;background-color: #172844;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 7px;align-items: center;justify-content: flex-start;width: 229px;height: 27px;position: relative;flex-shrink: 0;padding: 7px 11px;">
+            <div style="border-radius: 3px;background-color: #94b5ff;width: 6px;height: 6px;position: relative;flex-shrink: 0;">
+            </div>
+            <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">GPS en vivo · actualizado hace 2 min</span>
+          </div>
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 24px;align-items: start;justify-content: flex-start;width: 100%;height: 544px;position: relative;flex-shrink: 0;padding: 0px 24px 24px;">
+          <div style="border-radius: 12px;background-color: #151c25;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 852px;height: 520px;position: relative;flex-shrink: 0;">
+            <svg width="722" height="476" viewBox="0 0 722 476" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 130px;top: 30px;width: 722px;height: 476px;position: absolute;">
+              <defs>
+                <clipPath id="def_0_0">
+                  <path clip-rule="nonzero" d="M34 326L83 313 132 322 155 340 188 344 215 366 243 377 264 395 245 412 224 425 207 436 185 460 155 476 94 467 64 446 33 450 14 429 21 396 26 366 34 326Z" />
+                </clipPath>
+                <clipPath id="def_1">
+                  <path clip-rule="nonzero" d="M14 349L34 348 26 384 21 417 14 429 33 450 13 450 0 433 4 405 14 349Z" />
+                </clipPath>
+                <clipPath id="def_2">
+                  <path clip-rule="nonzero" d="M164 187L194 194 212 173 247 182 261 170 288 184 314 189 337 207 354 223 345 243 351 265 336 285 345 313 331 332 311 346 285 338 268 363 243 377 215 366 188 344 193 315 171 296 165 260 149 245 166 223 138 210 136 190 164 187Z" />
+                </clipPath>
+                <clipPath id="def_3">
+                  <path clip-rule="nonzero" d="M348 57L374 67 396 51 420 63 431 54 453 75 451 105 471 124 458 145 480 166 469 187 443 200 418 191 394 203 371 195 357 209 337 207 326 184 335 158 321 137 338 113 336 83 348 57Z" />
+                </clipPath>
+                <clipPath id="def_4">
+                  <path clip-rule="nonzero" d="M288 162L310 155 328 165 326 184 314 189 288 184 272 172 288 162Z" />
+                </clipPath>
+                <clipPath id="def_5">
+                  <path clip-rule="nonzero" d="M307 120L329 110 338 113 321 137 335 158 328 165 310 155 297 150 307 120Z" />
+                </clipPath>
+                <clipPath id="def_6">
+                  <path clip-rule="nonzero" d="M354 223L373 216 394 221 403 240 380 254 363 248 345 243 354 223Z" />
+                </clipPath>
+                <clipPath id="def_7">
+                  <path clip-rule="nonzero" d="M403 240L425 222 450 229 453 252 475 276 470 296 495 323 511 335 514 357 535 371 523 385 506 366 487 358 465 336 451 311 429 290 412 275 391 269 380 254 403 240ZM468 410L498 412 521 421 494 434 471 428 468 410ZM390 342L403 339 407 363 397 382 388 369 390 342Z" />
+                </clipPath>
+                <clipPath id="def_8">
+                  <path clip-rule="nonzero" d="M394 203L418 191 443 200 469 187 493 197 509 213 484 227 450 229 425 222 403 240 394 221 373 216 394 203Z" />
+                </clipPath>
+                <clipPath id="def_9">
+                  <path clip-rule="nonzero" d="M471 124L502 125 522 143 520 167 493 179 469 187 480 166 458 145 471 124Z" />
+                </clipPath>
+                <clipPath id="def_10">
+                  <path clip-rule="nonzero" d="M453 75L498 62 542 73 565 105 609 105 654 157 720 167 722 469 574 468 550 412 535 371 514 357 511 335 495 323 470 296 475 276 453 252 450 229 484 227 509 213 493 197 493 179 520 167 522 143 502 125 471 124 451 105 453 75Z" />
+                </clipPath>
+                <clipPath id="def_11">
+                  <path clip-rule="nonzero" d="M187 8L207 2 215 28 200 49 216 72 216 98 237 120 251 148 233 159 199 161 185 177 152 175 171 156 192 141 183 118 169 111 182 85 169 70 179 49 168 35 187 8Z" />
+                </clipPath>
+                <clipPath id="def_12">
+                  <path clip-rule="nonzero" d="M133 72L155 80 148 106 159 123 144 143 120 151 109 132 120 115 111 95 133 72Z" />
+                </clipPath>
+                <clipPath id="def_13">
+                  <path clip-rule="nonzero" d="M365 2L380 0 384 24 375 42 374 67 348 57 351 37 365 2Z" />
+                </clipPath>
+              </defs>
+              <path d="M34 326L83 313 132 322 155 340 188 344 215 366 243 377 264 395 245 412 224 425 207 436 185 460 155 476 94 467 64 446 33 450 14 429 21 396 26 366 34 326Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M14 349L34 348 26 384 21 417 14 429 33 450 13 450 0 433 4 405 14 349Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M164 187L194 194 212 173 247 182 261 170 288 184 314 189 337 207 354 223 345 243 351 265 336 285 345 313 331 332 311 346 285 338 268 363 243 377 215 366 188 344 193 315 171 296 165 260 149 245 166 223 138 210 136 190 164 187Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M348 57L374 67 396 51 420 63 431 54 453 75 451 105 471 124 458 145 480 166 469 187 443 200 418 191 394 203 371 195 357 209 337 207 326 184 335 158 321 137 338 113 336 83 348 57Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M288 162L310 155 328 165 326 184 314 189 288 184 272 172 288 162Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M307 120L329 110 338 113 321 137 335 158 328 165 310 155 297 150 307 120Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M354 223L373 216 394 221 403 240 380 254 363 248 345 243 354 223Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M403 240L425 222 450 229 453 252 475 276 470 296 495 323 511 335 514 357 535 371 523 385 506 366 487 358 465 336 451 311 429 290 412 275 391 269 380 254 403 240ZM468 410L498 412 521 421 494 434 471 428 468 410ZM390 342L403 339 407 363 397 382 388 369 390 342Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M394 203L418 191 443 200 469 187 493 197 509 213 484 227 450 229 425 222 403 240 394 221 373 216 394 203Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M471 124L502 125 522 143 520 167 493 179 469 187 480 166 458 145 471 124Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M453 75L498 62 542 73 565 105 609 105 654 157 720 167 722 469 574 468 550 412 535 371 514 357 511 335 495 323 470 296 475 276 453 252 450 229 484 227 509 213 493 197 493 179 520 167 522 143 502 125 471 124 451 105 453 75Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M187 8L207 2 215 28 200 49 216 72 216 98 237 120 251 148 233 159 199 161 185 177 152 175 171 156 192 141 183 118 169 111 182 85 169 70 179 49 168 35 187 8Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M133 72L155 80 148 106 159 123 144 143 120 151 109 132 120 115 111 95 133 72Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M365 2L380 0 384 24 375 42 374 67 348 57 351 37 365 2Z" style="fill-rule: nonzero;fill: #202b37;" />
+              <path d="M34 326L83 313 132 322 155 340 188 344 215 366 243 377 264 395 245 412 224 425 207 436 185 460 155 476 94 467 64 446 33 450 14 429 21 396 26 366 34 326Z" clip-path="url(#def_0_0)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M14 349L34 348 26 384 21 417 14 429 33 450 13 450 0 433 4 405 14 349Z" clip-path="url(#def_1)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M164 187L194 194 212 173 247 182 261 170 288 184 314 189 337 207 354 223 345 243 351 265 336 285 345 313 331 332 311 346 285 338 268 363 243 377 215 366 188 344 193 315 171 296 165 260 149 245 166 223 138 210 136 190 164 187Z" clip-path="url(#def_2)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M348 57L374 67 396 51 420 63 431 54 453 75 451 105 471 124 458 145 480 166 469 187 443 200 418 191 394 203 371 195 357 209 337 207 326 184 335 158 321 137 338 113 336 83 348 57Z" clip-path="url(#def_3)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M288 162L310 155 328 165 326 184 314 189 288 184 272 172 288 162Z" clip-path="url(#def_4)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M307 120L329 110 338 113 321 137 335 158 328 165 310 155 297 150 307 120Z" clip-path="url(#def_5)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M354 223L373 216 394 221 403 240 380 254 363 248 345 243 354 223Z" clip-path="url(#def_6)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M403 240L425 222 450 229 453 252 475 276 470 296 495 323 511 335 514 357 535 371 523 385 506 366 487 358 465 336 451 311 429 290 412 275 391 269 380 254 403 240ZM468 410L498 412 521 421 494 434 471 428 468 410ZM390 342L403 339 407 363 397 382 388 369 390 342Z" clip-path="url(#def_7)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M394 203L418 191 443 200 469 187 493 197 509 213 484 227 450 229 425 222 403 240 394 221 373 216 394 203Z" clip-path="url(#def_8)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M471 124L502 125 522 143 520 167 493 179 469 187 480 166 458 145 471 124Z" clip-path="url(#def_9)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M453 75L498 62 542 73 565 105 609 105 654 157 720 167 722 469 574 468 550 412 535 371 514 357 511 335 495 323 470 296 475 276 453 252 450 229 484 227 509 213 493 197 493 179 520 167 522 143 502 125 471 124 451 105 453 75Z" clip-path="url(#def_10)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M187 8L207 2 215 28 200 49 216 72 216 98 237 120 251 148 233 159 199 161 185 177 152 175 171 156 192 141 183 118 169 111 182 85 169 70 179 49 168 35 187 8Z" clip-path="url(#def_11)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M133 72L155 80 148 106 159 123 144 143 120 151 109 132 120 115 111 95 133 72Z" clip-path="url(#def_12)" style="stroke: #3a4653;stroke-width: 2;" />
+              <path d="M365 2L380 0 384 24 375 42 374 67 348 57 351 37 365 2Z" clip-path="url(#def_13)" style="stroke: #3a4653;stroke-width: 2;" />
+            </svg>
+            <svg width="476" height="352" viewBox="0 0 476 352" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 164px;top: 113px;width: 476px;height: 352px;opacity: 0.7;position: absolute;">
+              <defs>
+                <clipPath id="def_0_1">
+                  <path clip-rule="nonzero" d="M84 339L150 317 191 342 235 268M84 339L46 282 0 255M84 339L138 259M84 339L26 352M138 259L176 213M138 259L235 268M138 259L159 232M176 213L225 135M176 213L142 231 149 286M225 135L277 93 328 32M225 135L283 145 314 173M225 135L191 117 158 112M225 135L254 101 276 72 291 48M328 32L381 0 366 72M328 32L371 36 421 53M314 173L372 187M314 173L268 219M314 173L320 140 366 72M372 187L414 228 453 275M372 187L409 117 438 89M235 268L268 219M235 268L297 249M268 219L297 249M297 249L348 255M366 72L404 98 452 122 476 164M366 72L438 89M438 89L476 71" />
+                </clipPath>
+              </defs>
+              <path d="M84 339L150 317 191 342 235 268M84 339L46 282 0 255M84 339L138 259M84 339L26 352M138 259L176 213M138 259L235 268M138 259L159 232M176 213L225 135M176 213L142 231 149 286M225 135L277 93 328 32M225 135L283 145 314 173M225 135L191 117 158 112M225 135L254 101 276 72 291 48M328 32L381 0 366 72M328 32L371 36 421 53M314 173L372 187M314 173L268 219M314 173L320 140 366 72M372 187L414 228 453 275M372 187L409 117 438 89M235 268L268 219M235 268L297 249M268 219L297 249M297 249L348 255M366 72L404 98 452 122 476 164M366 72L438 89M438 89L476 71" clip-path="url(#def_0_1)" style="stroke: #3c4b5b;stroke-width: 2;" />
+            </svg>
+            <svg width="292" height="226" viewBox="0 0 292 226" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 311px;top: 143px;width: 292px;height: 226px;opacity: 0.6;position: absolute;">
+              <path d="M156 0C146 36 160 67 162 98 164 129 146 128 135 157 124 186 135 202 121 224M0 165C28 147 43 158 59 142 75 126 78 120 77 104M213 77C239 64 266 84 290 88" transform=" translate(1 1)" style="stroke: #294157;stroke-width: 2;" />
+            </svg>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #8292a4;left: 498px;top: 132px;width: max-content;position: absolute;">ALEMANIA</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #8292a4;left: 341px;top: 279px;width: max-content;position: absolute;">FRANCIA</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #8292a4;left: 218px;top: 414px;width: max-content;position: absolute;">ESPAÑA</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #8292a4;left: 610px;top: 422px;width: max-content;position: absolute;">ITALIA</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #8292a4;left: 482px;top: 279px;width: max-content;position: absolute;">SUIZA</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #8292a4;left: 564px;top: 241px;width: max-content;position: absolute;">AUSTRIA</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a0adbc;left: 379px;top: 237px;width: max-content;position: absolute;">París</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a0adbc;left: 242px;top: 453px;width: max-content;position: absolute;">Madrid</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a0adbc;left: 306px;top: 344px;width: max-content;position: absolute;">Burdeos</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a0adbc;left: 458px;top: 224px;width: max-content;position: absolute;">Estrasburgo</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a0adbc;left: 499px;top: 178px;width: max-content;position: absolute;">Stuttgart</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a0adbc;left: 451px;top: 302px;width: max-content;position: absolute;">Ginebra</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a0adbc;left: 399px;top: 386px;width: max-content;position: absolute;">Montpellier</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a0adbc;left: 349px;top: 415px;width: max-content;position: absolute;">Perpiñán</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a0adbc;left: 538px;top: 296px;width: max-content;position: absolute;">Milán</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #8292a4;left: 490px;top: 480px;width: max-content;position: absolute;">MAR MEDITERRÁNEO</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #8292a4;left: 26px;top: 302px;width: max-content;position: absolute;">OCÉANO ATLÁNTICO</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #8292a4;left: 293px;top: 115px;width: max-content;position: absolute;">REINO UNIDO</span>
+            <div style="border-radius: 50%;background-color: #728295;left: 387px;top: 246px;width: 4px;height: 4px;position: absolute;">
+            </div>
+            <div style="border-radius: 50%;background-color: #728295;left: 246px;top: 450px;width: 4px;height: 4px;position: absolute;">
+            </div>
+            <div style="border-radius: 50%;background-color: #728295;left: 304px;top: 342px;width: 4px;height: 4px;position: absolute;">
+            </div>
+            <div style="border-radius: 50%;background-color: #728295;left: 479px;top: 241px;width: 4px;height: 4px;position: absolute;">
+            </div>
+            <div style="border-radius: 50%;background-color: #728295;left: 529px;top: 195px;width: 4px;height: 4px;position: absolute;">
+            </div>
+            <div style="border-radius: 50%;background-color: #728295;left: 476px;top: 305px;width: 4px;height: 4px;position: absolute;">
+            </div>
+            <div style="border-radius: 50%;background-color: #728295;left: 399px;top: 379px;width: 4px;height: 4px;position: absolute;">
+            </div>
+            <div style="border-radius: 50%;background-color: #728295;left: 367px;top: 426px;width: 4px;height: 4px;position: absolute;">
+            </div>
+            <div style="border-radius: 50%;background-color: #728295;left: 534px;top: 298px;width: 4px;height: 4px;position: absolute;">
+            </div>
+            <svg width="79.95827" height="122.48800899999999" viewBox="0 0 79.95827 122.48800899999999" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 352.5px;top: 332.8px;width: 80px;height: 122.5px;position: absolute;">
+              <path d="M47 48L47.6708 49.3416 47.7796 49.2872 47.8782 49.216 47 48ZM15 95L16.2481 95.832 16.2889 95.7708 16.3235 95.7059 15 95ZM0 122L1.4709 122.294C1.5948 121.675 1.8162 120.929 2.1421 120.055L0.7368 119.531-0.6686 119.006C-1.0302 119.975-1.306 120.882-1.4709 121.706L0 122ZM2.8683 114.827L4.2033 115.511C4.9075 114.136 5.7277 112.642 6.6507 111.042L5.3514 110.293 4.0522 109.543C3.1105 111.175 2.2653 112.714 1.5333 114.143L2.8683 114.827ZM8.0009 105.859L9.2783 106.645C10.1386 105.248 11.0536 103.795 12.0162 102.293L10.7535 101.484 9.4908 100.674C8.5198 102.188 7.5948 103.657 6.7235 105.073L8.0009 105.859ZM13.5719 97.1535L14.8241 97.9793C15.2909 97.2714 15.7658 96.5555 16.2481 95.832L15 95 13.7519 94.168C13.2671 94.8952 12.7894 95.6154 12.3197 96.3277L13.5719 97.1535ZM15 95L16.3235 95.7059C16.7839 94.8427 17.2299 93.9595 17.6651 93.0604L16.315 92.4069 14.9649 91.7533C14.544 92.6227 14.1157 93.4705 13.6765 94.2941L15 95ZM18.7155 87.1063L20.0934 87.6992C20.851 85.9386 21.6016 84.1338 22.3606 82.3246L20.9773 81.7444 19.5941 81.1642C18.8303 82.9851 18.0882 84.7694 17.3377 86.5134L18.7155 87.1063ZM23.2693 76.3945L24.6409 77.0018C25.4154 75.2526 26.2208 73.5111 27.0777 71.7935L25.7355 71.1239 24.3933 70.4542C23.5104 72.2239 22.6851 74.0089 21.8977 75.7872L23.2693 76.3945ZM28.5071 66.0086L29.7978 66.7729C30.7618 65.1448 31.7934 63.5598 32.9113 62.0339L31.7013 61.1474 30.4912 60.2609C29.3082 61.8758 28.2233 63.5438 27.2164 65.2443L28.5071 66.0086ZM35.4078 56.6668L36.5017 57.6931C37.7661 56.3455 39.1289 55.068 40.6072 53.8753L39.6653 52.7079 38.7234 51.5405C37.1311 52.8252 35.6673 54.198 34.3139 55.6404L35.4078 56.6668ZM44.4407 49.3943L45.2047 50.6851C45.9973 50.2161 46.8187 49.7677 47.6708 49.3416L47 48 46.3292 46.6584C45.4138 47.1161 44.5302 47.5983 43.6767 48.1034L44.4407 49.3943ZM47 48L47.8782 49.216C48.6915 48.6287 49.4872 48.0429 50.2656 47.4575L49.364 46.2587 48.4625 45.0598C47.7006 45.6328 46.9205 46.2072 46.1218 46.784L47 48ZM53.9643 42.6281L54.9237 43.7812C56.4912 42.4768 57.9765 41.1629 59.3816 39.8275L58.3483 38.7402 57.315 37.6529C55.9626 38.9381 54.5272 40.2083 53.0048 41.4751L53.9643 42.6281ZM62.4269 34.5363L63.548 35.5329C64.8956 34.017 66.1506 32.4613 67.3159 30.8505L66.1006 29.9713 64.8852 29.0921C63.7821 30.617 62.5906 32.0946 61.3059 33.5397L62.4269 34.5363ZM69.2704 25.045L70.5747 25.7857C71.5546 24.0604 72.447 22.2685 73.256 20.3957L71.8789 19.8009 70.5019 19.2061C69.7355 20.9805 68.8914 22.6748 67.9661 24.3042L69.2704 25.045ZM73.9277 14.3129L75.3566 14.7693C75.946 12.924 76.4696 11.0028 76.9307 8.9953L75.4688 8.6595 74.0069 8.3237C73.5632 10.2552 73.0613 12.0956 72.4988 13.8565L73.9277 14.3129ZM76.5795 2.907L78.0607 3.1433C78.2145 2.1793 78.3566 1.1966 78.4874 0.194L77 0 75.5126-0.194C75.3854 0.7815 75.2473 1.736 75.0982 2.6707L76.5795 2.907Z" transform=" translate(1.47087 0.194009)" style="fill: #94b5ff;" />
+            </svg>
+            <svg width="162" height="140" viewBox="0 0 162 140" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 429px;top: 195px;width: 162px;height: 140px;position: absolute;">
+              <path d="M158 12L135 8 117 1 100 0 77 12 62 28 50 46 39 71 29 89 15 110 6 125 0 136" transform=" translate(2 2)" style="stroke: #2864ff;stroke-width: 4;stroke-linecap: round;" />
+            </svg>
+            <div style="border-width: 3px;border-style: solid;border-color: #2864ff;border-radius: 50%;background-color: #f5f7fa;left: 583px;top: 203px;width: 12px;height: 12px;position: absolute;">
+            </div>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;left: 607px;top: 202px;width: max-content;position: absolute;">Múnich · Recogida</span>
+            <div style="border-width: 4px;border-style: solid;border-color: #2864ff;border-radius: 50%;background-color: #f5f7fa;left: 347px;top: 448px;width: 14px;height: 14px;position: absolute;">
+            </div>
+            <div style="border-radius: 4px;background-color: #2864ff;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: flex-start;left: 364px;top: 446px;width: 74px;height: 25px;position: absolute;padding: 6px 10px;">
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Barcelona</span>
+            </div>
+            <div style="border-width: 1px;border-style: solid;border-color: rgba(40,100,255,0.31);border-radius: 50%;background-color: rgba(40,100,255,0.19);left: 410px;top: 312px;width: 42px;height: 42px;position: absolute;">
+            </div>
+            <div style="border-width: 2px;border-style: solid;border-color: #f5f7fa;border-radius: 15px;background-color: #2864ff;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;left: 416px;top: 318px;width: 30px;height: 30px;position: absolute;">
+              <div style="border-radius: 0px;overflow: hidden;width: 15px;height: 15px;position: relative;flex-shrink: 0;">
+                <svg width="14.101000428199768" height="11.598999619483948" viewBox="0 0 14.101000428199768 11.598999619483948" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 3%;top: 11.3%;right: 3%;bottom: 11.3%;width: 94%;height: 77.3%;position: absolute;">
+                  <path d="M7.5006 8.7491L7.5006 1.2499C7.5006 0.9184 7.3689 0.6005 7.1345 0.3661 6.9 0.1317 6.582 0 6.2505 0L1.2501 0C0.9186 0 0.6006 0.1317 0.3661 0.3661 0.1317 0.6005 0 0.9184 0 1.2499L0 8.1242C0 8.2899 0.0659 8.4489 0.1831 8.5661 0.3003 8.6833 0.4593 8.7491 0.6251 8.7491L1.8752 8.7491M1.8752 8.7491C1.8752 9.4394 2.4348 9.999 3.1253 9.999 3.8157 9.999 4.3754 9.4394 4.3754 8.7491M1.8752 8.7491C1.8752 8.0588 2.4348 7.4992 3.1253 7.4992 3.8157 7.4992 4.3754 8.0588 4.3754 8.7491M4.3754 8.7491L8.1257 8.7491M8.1257 8.7491C8.1257 9.4394 8.6853 9.999 9.3758 9.999 10.0662 9.999 10.6259 9.4394 10.6259 8.7491M8.1257 8.7491C8.1257 8.0588 8.6853 7.4992 9.3758 7.4992 10.0662 7.4992 10.6259 8.0588 10.6259 8.7491M10.6259 8.7491L11.876 8.7491C12.0417 8.7491 12.2007 8.6833 12.3179 8.5661 12.4351 8.4489 12.501 8.2899 12.501 8.1242L12.501 5.8432C12.5007 5.7013 12.4523 5.5638 12.3635 5.4532L10.1883 2.7347C10.1299 2.6615 10.0557 2.6024 9.9713 2.5617 9.8869 2.5211 9.7945 2.4999 9.7008 2.4997L7.5006 2.4997" transform=" translate(0.800000011920929 0.8000000119209291)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+            </div>
+            <div style="border-width: 1px;border-style: solid;border-color: #4c6081;border-radius: 6px;background-color: rgba(16,21,29,0.96);overflow: hidden;display: flex;flex-direction: column;row-gap: 7px;align-items: start;justify-content: flex-start;left: 457px;top: 315px;width: 226px;height: 62px;position: absolute;padding: 13px;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 7px;align-items: center;justify-content: flex-start;width: 161px;height: 15px;position: relative;flex-shrink: 0;">
+                <div style="border-radius: 50%;background-color: #94b5ff;width: 5px;height: 5px;position: relative;flex-shrink: 0;">
+                </div>
+                <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">En tránsito · Lyon, Francia</span>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 9px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Hace 2 min · A7 dirección sur</span>
+            </div>
+            <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 6px;background-color: #0b0d10;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 2px;align-items: start;justify-content: flex-start;left: 20px;top: 20px;width: 136px;height: 37px;position: absolute;padding: 3px;">
+              <div style="border-radius: 4px;background-color: #20252d;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: flex-start;width: 58px;height: 29px;position: relative;flex-shrink: 0;padding: 8px 14px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Mapa</span>
+              </div>
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: flex-start;width: 68px;height: 29px;position: relative;flex-shrink: 0;padding: 8px 14px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Satélite</span>
+              </div>
+            </div>
+            <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 6px;background-color: #0b0d10;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;left: 794px;top: 20px;width: 38px;height: 38px;position: absolute;">
+              <div style="border-radius: 0px;overflow: hidden;width: 17px;height: 17px;position: relative;flex-shrink: 0;">
+                <svg width="14.35000002384186" height="14.35000002384186" viewBox="0 0 14.35000002384186 14.35000002384186" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 7.8%;top: 7.8%;right: 7.8%;bottom: 7.8%;width: 84.4%;height: 84.4%;position: absolute;">
+                  <path d="M3.5417 0L1.4167 0C1.0409 0 0.6806 0.1493 0.4149 0.4149 0.1493 0.6806 0 1.0409 0 1.4167L0 3.5417M12.75 3.5417L12.75 1.4167C12.75 1.0409 12.6007 0.6806 12.3351 0.4149 12.0694 0.1493 11.7091 0 11.3333 0L9.2083 0M0 9.2083L0 11.3333C0 11.7091 0.1493 12.0694 0.4149 12.3351 0.6806 12.6007 1.0409 12.75 1.4167 12.75L3.5417 12.75M9.2083 12.75L11.3333 12.75C11.7091 12.75 12.0694 12.6007 12.3351 12.3351 12.6007 12.0694 12.75 11.7091 12.75 11.3333L12.75 9.2083" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+            </div>
+            <div style="border-radius: 6px;background-color: #303640;overflow: hidden;display: flex;flex-direction: column;row-gap: 1px;align-items: start;justify-content: flex-start;left: 794px;top: 375px;width: 38px;height: 110px;position: absolute;">
+              <div style="border-radius: 0px;background-color: #0b0d10;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;width: 38px;height: 36px;position: relative;flex-shrink: 0;">
+                <div style="border-radius: 0px;overflow: hidden;width: 16px;height: 16px;position: relative;flex-shrink: 0;">
+                  <svg width="10.934400200843811" height="10.934400200843811" viewBox="0 0 10.934400200843811 10.934400200843811" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 15.8%;top: 15.8%;right: 15.8%;bottom: 15.8%;width: 68.3%;height: 68.3%;position: absolute;">
+                    <path d="M0 4.6672L9.3344 4.6672M4.6672 0L4.6672 9.3344" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                  </svg>
+                </div>
+              </div>
+              <div style="border-radius: 0px;background-color: #0b0d10;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;width: 38px;height: 36px;position: relative;flex-shrink: 0;">
+                <div style="border-radius: 0px;overflow: hidden;width: 16px;height: 16px;position: relative;flex-shrink: 0;">
+                  <svg width="9.334400177001953" height="1.600000023841858" viewBox="0 0 9.334400177001953 1.600000023841858" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 20.8%;top: 45%;right: 20.8%;bottom: 45%;width: 58.3%;height: 10%;position: absolute;">
+                    <path d="M0 0L9.3344 0" transform=" translate(0 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                  </svg>
+                </div>
+              </div>
+              <div style="border-radius: 0px;background-color: #0b0d10;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;width: 38px;height: 36px;position: relative;flex-shrink: 0;">
+                <div style="border-radius: 0px;overflow: hidden;width: 16px;height: 16px;position: relative;flex-shrink: 0;">
+                  <svg width="14.93440020084381" height="14.93440020084381" viewBox="0 0 14.93440020084381 14.93440020084381" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 3.3%;top: 3.3%;right: 3.3%;bottom: 3.3%;width: 93.3%;height: 93.3%;position: absolute;">
+                    <path d="M0 6.6672L2.0002 6.6672M2.0002 6.6672C2.0002 9.2447 4.0897 11.3342 6.6672 11.3342M2.0002 6.6672C2.0002 4.0897 4.0897 2.0002 6.6672 2.0002M6.6672 11.3342C9.2447 11.3342 11.3342 9.2447 11.3342 6.6672M6.6672 11.3342L6.6672 13.3344M6.6672 2.0002C9.2447 2.0002 11.3342 4.0897 11.3342 6.6672M6.6672 2.0002L6.6672 0M11.3342 6.6672L13.3344 6.6672M8.6674 6.6672C8.6674 7.7719 7.7719 8.6674 6.6672 8.6674 5.5625 8.6674 4.667 7.7719 4.667 6.6672 4.667 5.5625 5.5625 4.667 6.6672 4.667 7.7719 4.667 8.6674 5.5625 8.6674 6.6672Z" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div style="border-radius: 6px;background-color: rgba(11,13,16,0.91);overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 14px;align-items: center;justify-content: flex-start;left: 20px;top: 477px;width: 256px;height: 30px;position: absolute;padding: 9px 12px;">
+              <div style="border-radius: 0px;background-color: #2864ff;width: 17px;height: 3px;position: relative;flex-shrink: 0;">
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 9px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Recorrido</span>
+              <div style="border-radius: 0px;background-color: #94b5ff;width: 17px;height: 2px;position: relative;flex-shrink: 0;">
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 9px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Ruta prevista</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 9px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">100 km ━</span>
+            </div>
+          </div>
+          <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 12px;background-color: #191d23;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 356px;height: 100%;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 181px;position: relative;flex-shrink: 0;padding: 14px;">
+              <div style="overflow: hidden;border-radius: 0px;left: 0px;top: 0px;width: 356px;height: 181px;position: absolute;">
+                <img src="../_assets/images/ec2d53fc03281f102b5888dd5b34e9ce56d24b49.jpg" alt="Mercedes del cliente" data-abovethefold=0 style="inset: 0;width: 100%;height: 100%;position: absolute;object-fit: cover;">
+              </div>
+              <div style="border-radius: 4px;background-color: rgba(11,13,16,0.82);overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: flex-start;width: 78px;height: 21px;position: relative;flex-shrink: 0;padding: 5px 8px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 9px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">TU VEHÍCULO</span>
+              </div>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 20px;align-items: start;justify-content: flex-start;width: 100%;height: 305px;position: relative;flex-shrink: 0;padding: 22px;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 7px;align-items: start;justify-content: flex-start;width: 100%;height: 47px;position: relative;flex-shrink: 0;">
+                <span class="text" style="display: inline;text-align: left;font-size: 21px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">Mercedes-Benz C 200</span>
+                <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">AMG Line · 2021 · Gris grafito</span>
+              </div>
+              <div style="border-radius: 0px;background-color: #303640;width: 100%;height: 1px;position: relative;flex-shrink: 0;">
+              </div>
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 100%;height: 40px;position: relative;flex-shrink: 0;">
+                <div style="border-radius: 6px;background-color: #172844;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;width: 40px;height: 40px;position: relative;flex-shrink: 0;">
+                  <div style="border-radius: 0px;overflow: hidden;width: 20px;height: 20px;position: relative;flex-shrink: 0;">
+                    <svg width="16.600000023841854" height="18.267999291419983" viewBox="0 0 16.600000023841854 18.267999291419983" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 8.5%;top: 4.3%;right: 8.5%;bottom: 4.3%;width: 83%;height: 91.3%;position: absolute;">
+                      <path d="M4.1667 0L4.1667 3.3336M10.8333 0L10.8333 3.3336M0 6.6672L15 6.6672M5 11.6676L6.6667 13.3344 10 10.0008M1.6667 1.6668L13.3333 1.6668C14.2538 1.6668 15 2.4131 15 3.3336L15 15.0012C15 15.9217 14.2538 16.668 13.3333 16.668L1.6667 16.668C0.7462 16.668 0 15.9217 0 15.0012L0 3.3336C0 2.4131 0.7462 1.6668 1.6667 1.6668Z" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                    </svg>
+                  </div>
+                </div>
+                <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 5px;align-items: start;justify-content: flex-start;width: 183px;height: 37px;position: relative;flex-shrink: 0;">
+                  <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Entrega estimada en concesionario</span>
+                  <span class="text" style="display: inline;text-align: left;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">30 de octubre de 2026</span>
+                </div>
+              </div>
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 41px;position: relative;flex-shrink: 0;">
+                <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 6px;align-items: start;justify-content: flex-start;width: 76px;height: 41px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+                  <span class="text" style="display: inline;text-align: left;font-size: 18px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">640 km</span>
+                  <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">hasta Barcelona</span>
+                </div>
+                <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 6px;align-items: start;justify-content: flex-start;width: 103px;height: 37px;position: relative;flex-shrink: 0;">
+                  <span class="text" style="display: inline;text-align: left;font-size: 16px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">100 %</span>
+                  <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">transporte asegurado</span>
+                </div>
+              </div>
+              <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 6px;background-color: #20252d;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: center;width: 100%;height: 52px;position: relative;flex-shrink: 0;padding: 0px 21px;">
+                <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 600;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Ver documentación</span>
+                <div style="border-radius: 0px;overflow: hidden;width: 18px;height: 18px;position: relative;flex-shrink: 0;">
+                  <svg width="13.598799816524796" height="16.601199746131854" viewBox="0 0 13.598799816524796 16.601199746131854" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 12.2%;top: 3.9%;right: 12.2%;bottom: 3.9%;width: 75.5%;height: 92.2%;position: absolute;">
+                    <path d="M7.4992 0L1.4998 0C1.1021 0 0.7206 0.1581 0.4393 0.4394 0.158 0.7207 0 1.1023 0 1.5001L0 13.5011C0 13.8989 0.158 14.2805 0.4393 14.5618 0.7206 14.8432 1.1021 15.0012 1.4998 15.0012L10.4989 15.0012C10.8967 15.0012 11.2782 14.8432 11.5595 14.5618 11.8408 14.2805 11.9988 13.8989 11.9988 13.5011L11.9988 4.5004M7.4992 0C7.7366-0.0004 7.9718 0.0462 8.1911 0.1371 8.4104 0.228 8.6096 0.3614 8.7771 0.5295L11.4679 3.2208C11.6365 3.3884 11.7702 3.5878 11.8613 3.8074 11.9525 4.0271 11.9992 4.2626 11.9988 4.5004M7.4992 0L7.4992 3.7503C7.4992 3.9492 7.5783 4.14 7.7189 4.2807 7.8595 4.4213 8.0503 4.5004 8.2492 4.5004L11.9988 4.5004M4.4995 5.2504L2.9997 5.2504M8.9991 8.2507L2.9997 8.2507M8.9991 11.2509L2.9997 11.2509" transform=" translate(0.8000000119209291 0.8000000119208873)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="border-width: 1px 0px 0px;border-style: solid;border-color: #303640;border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 26px;align-items: start;justify-content: flex-start;width: 100%;height: 180px;position: relative;flex-shrink: 0;padding: 23px 28px 28px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: start;justify-content: flex-start;width: 100%;height: 17px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 14px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">El recorrido de tu coche</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">ETAPA 2 DE 4</span>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 24px;align-items: start;justify-content: flex-start;width: 100%;height: 85px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 14px;align-items: start;justify-content: flex-start;width: 100%;height: 85px;position: relative;flex-grow: 1;flex-basis: 0px;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 100%;height: 28px;position: relative;flex-shrink: 0;">
+                <div style="border-radius: 14px;background-color: #2864ff;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;width: 28px;height: 28px;position: relative;flex-shrink: 0;">
+                  <div style="border-radius: 0px;overflow: hidden;width: 14px;height: 14px;position: relative;flex-shrink: 0;">
+                    <svg width="10.93239939212799" height="8.016199707984924" viewBox="0 0 10.93239939212799 8.016199707984924" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 11%;top: 19.3%;right: 11%;bottom: 23.5%;width: 78.1%;height: 57.3%;position: absolute;">
+                      <path d="M9.3324 0L2.9164 6.4162 0 3.4997" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #f5f7fa;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                    </svg>
+                  </div>
+                </div>
+                <div style="border-radius: 0px;background-color: #2864ff;width: 100%;height: 2px;position: relative;flex-grow: 1;flex-basis: 0px;">
+                </div>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">1. Compra y Peritaje</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: 100%;position: relative;flex-shrink: 0;">Completado · 26 oct</span>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 14px;align-items: start;justify-content: flex-start;width: 100%;height: 85px;position: relative;flex-grow: 1;flex-basis: 0px;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 100%;height: 28px;position: relative;flex-shrink: 0;">
+                <div style="border-width: 1px;border-style: solid;border-color: #2864ff;border-radius: 14px;background-color: #172844;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;width: 28px;height: 28px;position: relative;flex-shrink: 0;">
+                  <div style="border-radius: 50%;background-color: #2864ff;width: 7px;height: 7px;position: relative;flex-shrink: 0;">
+                  </div>
+                </div>
+                <div style="border-radius: 0px;background-color: #303640;width: 100%;height: 2px;position: relative;flex-grow: 1;flex-basis: 0px;">
+                </div>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">2. Tránsito GPS en vivo</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: 100%;position: relative;flex-shrink: 0;">En curso · Lyon, Francia</span>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 14px;align-items: start;justify-content: flex-start;width: 100%;height: 85px;position: relative;flex-grow: 1;flex-basis: 0px;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 100%;height: 28px;position: relative;flex-shrink: 0;">
+                <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 14px;background-color: #20252d;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;width: 28px;height: 28px;position: relative;flex-shrink: 0;">
+                  <div style="border-radius: 50%;background-color: #717d8d;width: 7px;height: 7px;position: relative;flex-shrink: 0;">
+                  </div>
+                </div>
+                <div style="border-radius: 0px;background-color: #303640;width: 100%;height: 2px;position: relative;flex-grow: 1;flex-basis: 0px;">
+                </div>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #a2aab8;width: 100%;position: relative;flex-shrink: 0;">3. ITV y Aduanas</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: 100%;position: relative;flex-shrink: 0;">Programado · 29 oct</span>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 14px;align-items: start;justify-content: flex-start;width: 100%;height: 85px;position: relative;flex-grow: 1;flex-basis: 0px;">
+              <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 100%;height: 28px;position: relative;flex-shrink: 0;">
+                <div style="border-width: 1px;border-style: solid;border-color: #303640;border-radius: 14px;background-color: #20252d;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;width: 28px;height: 28px;position: relative;flex-shrink: 0;">
+                  <div style="border-radius: 50%;background-color: #717d8d;width: 7px;height: 7px;position: relative;flex-shrink: 0;">
+                  </div>
+                </div>
+                <div style="border-radius: 0px;background-color: #303640;width: 100%;height: 2px;position: relative;flex-grow: 1;flex-basis: 0px;">
+                </div>
+              </div>
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #a2aab8;width: 100%;position: relative;flex-shrink: 0;">4. Entrega en concesionario</span>
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: 100%;position: relative;flex-shrink: 0;">Prevista · 30 oct, Barcelona</span>
+            </div>
+          </div>
+        </div>
+        <div style="border-radius: 0px;background-color: #191d23;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 74px;position: relative;flex-shrink: 0;padding: 20px 28px;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 12px;align-items: center;justify-content: flex-start;width: 370px;height: 34px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+            <div style="border-radius: 17px;background-color: #20252d;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: center;width: 34px;height: 34px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">MR</span>
+            </div>
+            <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Marta, tu asesora APCars, te acompaña hasta la entrega.</span>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 8px;align-items: center;justify-content: flex-start;width: 165px;height: 16px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;width: 16px;height: 16px;position: relative;flex-shrink: 0;">
+              <svg width="14.934400338539811" height="14.934400181433206" viewBox="0 0 14.934400338539811 14.934400181433206" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 3.3%;top: 3.3%;right: 3.3%;bottom: 3.3%;width: 93.3%;height: 93.3%;position: absolute;">
+                <path d="M0.6612 9.5618C0.7592 9.8091 0.781 10.0801 0.7239 10.3399L0.0138 12.5334C-0.0091 12.6446-0.0032 12.7598 0.031 12.8682 0.0651 12.9765 0.1264 13.0743 0.2089 13.1523 0.2915 13.2303 0.3926 13.2859 0.5026 13.3139 0.6127 13.3418 0.7281 13.3412 0.8379 13.3121L3.1134 12.6467C3.3585 12.5981 3.6124 12.6193 3.8461 12.7081 5.2698 13.3729 6.8826 13.5136 8.3999 13.1052 9.9172 12.6969 11.2415 11.7658 12.1392 10.4761 13.0369 9.1865 13.4503 7.6213 13.3064 6.0566 13.1625 4.4919 12.4706 3.0283 11.3527 1.9241 10.2349 0.8198 8.763 0.1458 7.1966 0.0211 5.6303-0.1037 4.0702 0.3287 2.7916 1.2421 1.5131 2.1555 0.5982 3.4911 0.2084 5.0133-0.1814 6.5354-0.021 8.1464 0.6612 9.5618Z" transform=" translate(0.8000000136094685 0.8000000123406718)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+              </svg>
+            </div>
+            <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 500;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">Escribir a mi asesora</span>
+            <div style="border-radius: 0px;overflow: hidden;width: 14px;height: 14px;position: relative;flex-shrink: 0;">
+              <svg width="7.432399868965149" height="7.432399868965149" viewBox="0 0 7.432399868965149 7.432399868965149" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 23.5%;top: 23.5%;right: 23.5%;bottom: 23.5%;width: 53.1%;height: 53.1%;position: absolute;">
+                <path d="M0 0L5.8324 0M5.8324 0L5.8324 5.8324M5.8324 0L0 5.8324" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #94b5ff;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="border-width: 1px 0px 0px;border-style: solid;border-color: #303640;border-radius: 0px;background-color: #0b0d10;overflow: hidden;display: flex;flex-direction: column;row-gap: 48px;align-items: start;justify-content: flex-start;width: 100%;height: 383px;position: relative;flex-shrink: 0;padding: 63px 80px 32px;">
+      <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 80px;align-items: start;justify-content: flex-start;width: 100%;height: 201px;position: relative;flex-shrink: 0;">
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 24px;align-items: start;justify-content: flex-start;width: 440px;height: 201px;position: relative;flex-shrink: 0;">
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 2px;align-items: center;justify-content: flex-start;width: 126px;height: 39px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 32px;font-family: Inter, system-ui, sans-serif;font-weight: 800;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">AP</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 32px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">Cars</span>
+            <div style="border-radius: 1px;background-color: #2864ff;width: 6px;height: 6px;position: relative;flex-shrink: 0;">
+            </div>
+          </div>
+          <span class="text" style="display: inline;text-align: left;line-height: 125%;font-size: 28px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: 100%;position: relative;flex-shrink: 0;">La tranquilidad también viene de serie.</span>
+          <span class="text" style="display: inline;text-align: left;line-height: 170%;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: 100%;position: relative;flex-shrink: 0;">Consultoría premium de importación de vehículos. De Alemania a Barcelona, con todo resuelto.</span>
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 20px;align-items: start;justify-content: flex-start;width: 300px;height: 150px;position: relative;flex-shrink: 0;">
+          <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">HABLEMOS DE TU PRÓXIMO COCHE</span>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 12px;align-items: start;justify-content: flex-start;width: 173px;height: 60px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 20px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">hola@apcars.es</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 20px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #f5f7fa;width: max-content;position: relative;flex-shrink: 0;">+34 93 595 24 20</span>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 7px;align-items: start;justify-content: flex-start;width: 191px;height: 37px;position: relative;flex-shrink: 0;">
+            <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">Barcelona · Visitas con cita previa</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 12px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: max-content;position: relative;flex-shrink: 0;">Lunes a viernes · 09:00–18:00 h</span>
+          </div>
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 20px;align-items: start;justify-content: flex-start;width: 100%;height: 139px;position: relative;flex-grow: 1;flex-basis: 0px;">
+          <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #94b5ff;width: max-content;position: relative;flex-shrink: 0;">EXPLORA APCARS</span>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 14px;align-items: start;justify-content: flex-start;width: 151px;height: 106px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 16px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">Vehículos en stock</span>
+              <div style="border-radius: 0px;overflow: hidden;width: 14px;height: 14px;position: relative;flex-shrink: 0;">
+                <svg width="7.432399868965149" height="7.432399868965149" viewBox="0 0 7.432399868965149 7.432399868965149" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 23.5%;top: 23.5%;right: 23.5%;bottom: 23.5%;width: 53.1%;height: 53.1%;position: absolute;">
+                  <path d="M0 0L5.8324 0M5.8324 0L5.8324 5.8324M5.8324 0L0 5.8324" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #717d8d;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 16px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">Calculadora de costes</span>
+              <div style="border-radius: 0px;overflow: hidden;width: 14px;height: 14px;position: relative;flex-shrink: 0;">
+                <svg width="7.432399868965149" height="7.432399868965149" viewBox="0 0 7.432399868965149 7.432399868965149" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 23.5%;top: 23.5%;right: 23.5%;bottom: 23.5%;width: 53.1%;height: 53.1%;position: absolute;">
+                  <path d="M0 0L5.8324 0M5.8324 0L5.8324 5.8324M5.8324 0L0 5.8324" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #717d8d;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 16px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">Búsqueda a la carta</span>
+              <div style="border-radius: 0px;overflow: hidden;width: 14px;height: 14px;position: relative;flex-shrink: 0;">
+                <svg width="7.432399868965149" height="7.432399868965149" viewBox="0 0 7.432399868965149 7.432399868965149" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 23.5%;top: 23.5%;right: 23.5%;bottom: 23.5%;width: 53.1%;height: 53.1%;position: absolute;">
+                  <path d="M0 0L5.8324 0M5.8324 0L5.8324 5.8324M5.8324 0L0 5.8324" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #717d8d;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+            </div>
+            <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 16px;position: relative;flex-shrink: 0;">
+              <span class="text" style="display: inline;text-align: left;font-size: 13px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">Acceso Clientes</span>
+              <div style="border-radius: 0px;overflow: hidden;width: 14px;height: 14px;position: relative;flex-shrink: 0;">
+                <svg width="7.432399868965149" height="7.432399868965149" viewBox="0 0 7.432399868965149 7.432399868965149" fill="none" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="left: 23.5%;top: 23.5%;right: 23.5%;bottom: 23.5%;width: 53.1%;height: 53.1%;position: absolute;">
+                  <path d="M0 0L5.8324 0M5.8324 0L5.8324 5.8324M5.8324 0L0 5.8324" transform=" translate(0.800000011920929 0.800000011920929)" style="stroke: #717d8d;stroke-width: 1.600000023841858;stroke-linecap: round;" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: column;row-gap: 24px;align-items: start;justify-content: flex-start;width: 100%;height: 38px;position: relative;flex-shrink: 0;">
+        <div style="border-radius: 0px;background-color: #303640;width: 100%;height: 1px;position: relative;flex-shrink: 0;">
+        </div>
+        <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 0px;align-items: center;justify-content: flex-start;width: 100%;height: 13px;position: relative;flex-shrink: 0;">
+          <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: max-content;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">© 2026 APCars. Todos los derechos reservados.</span>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 28px;align-items: start;justify-content: flex-start;width: 209px;height: 13px;position: relative;flex-shrink: 0;margin: 0px auto 0px 0px;">
+            <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: max-content;position: relative;flex-shrink: 0;">Aviso legal</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: max-content;position: relative;flex-shrink: 0;">Privacidad</span>
+            <span class="text" style="display: inline;text-align: left;font-size: 11px;font-family: Inter, system-ui, sans-serif;font-weight: 400;color: #717d8d;width: max-content;position: relative;flex-shrink: 0;">Cookies</span>
+          </div>
+          <div style="border-radius: 0px;overflow: hidden;display: flex;flex-direction: row;grid-column-gap: 8px;align-items: center;justify-content: flex-start;width: 133px;height: 13px;position: relative;flex-shrink: 0;">
+            <div style="border-radius: 0px;background-color: #2864ff;width: 5px;height: 5px;position: relative;flex-shrink: 0;">
+            </div>
+            <span class="text" style="display: inline;text-align: left;font-size: 10px;font-family: &quot;IBM Plex Mono&quot;, system-ui, sans-serif;font-weight: 400;color: #a2aab8;width: max-content;position: relative;flex-shrink: 0;">ALEMANIA → BARCELONA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body></html>
